@@ -26,6 +26,30 @@ A simple cross-platform Flutter app that shows current weather and a 7-day forec
 
 
 ---
+# Project Folder Structure
+My folder structure is:
+lib/
+├── main.dart
+├── core/
+            ----config
+            ----utils
+            ----provider
+            ----services
+      
+│   
+├── feature/
+             ---data/
+                   ---model/
+             ---presentaion
+                  ---- screens/
+                  ----widgets/
+
+assets/
+pubspec.yaml
+README.md
+
+
+
 ## Android Apk
 
 Link: https://drive.google.com/file/d/1j3iQf-GPEljUQWVT4vntNEKTWlQv0WdN/view?usp=sharing
@@ -46,12 +70,7 @@ Link: https://drive.google.com/file/d/1j3iQf-GPEljUQWVT4vntNEKTWlQv0WdN/view?usp
 ### Configure the API Key
 
 1. Open `lib/services/weather_service.dart`
-2. Paste `apiKey` value with my WeatherAPI.com key:
-
-```dart
-static const String apiKey = 'f01395384a2c48f69a065023252207';
-
-
+2. Paste `apiKey: f01395384a2c48f69a065023252207` value with my WeatherAPI.com key:
 # Limitations & Notes
 -The free WeatherAPI.com plan supports up to 7-day forecasts.
 -Location-based weather by GPS is not implemented — user searches city manually.
@@ -65,7 +84,7 @@ http — API requests
 intl — Date formatting
 
 
-# Github
+# Github Commands
 git commit -m "weatherapp"
 git remote add origin https://github.com/HridoyDhar1/WeatherApp.git
 git branch -M main
