@@ -1,16 +1,71 @@
-# weatherapp
 
-A new Flutter project.
+# Flutter Weather App
 
-## Getting Started
+A simple cross-platform Flutter app that shows current weather and a 7-day forecast using the free WeatherAPI.com service.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Display current weather details for a city:
+  - Temperature (°C)
+  - Weather condition description
+  - Humidity percentage
+  - Wind speed (kph)
+- 7-day weather forecast with daily min/max temperatures and conditions.
+- Search functionality to look up weather by city name.
+- Simple, clean UI using Flutter and Provider for state management.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which[main.dart](lib/main.dart) offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Screenshots
+
+![weatherapp](https://github.com/user-attachments/assets/90c110cd-8304-457c-9108-e33356389b25)
+![search](https://github.com/user-attachments/assets/b5ebc597-1a9e-47c4-aab3-05badbfb4b3b)
+
+
+---
+## Android Apk
+
+Link: https://drive.google.com/file/d/1j3iQf-GPEljUQWVT4vntNEKTWlQv0WdN/view?usp=sharing
+
+## Setup Instructions
+
+### Prerequisites
+
+- Flutter SDK installed ([Flutter install guide](https://flutter.dev/docs/get-started/install))
+- An IDE such as Android Studio.
+- Internet connection for API calls
+
+### Get WeatherAPI.com API Key (Free)
+
+1. Sign up at [https://www.weatherapi.com](https://www.weatherapi.com)
+2. Go to the dashboard and copy  API key.
+
+### Configure the API Key
+
+1. Open `lib/services/weather_service.dart`
+2. Paste `apiKey` value with my WeatherAPI.com key:
+
+```dart
+static const String apiKey = 'f01395384a2c48f69a065023252207';
+
+
+# Limitations & Notes
+-The free WeatherAPI.com plan supports up to 7-day forecasts.
+-Location-based weather by GPS is not implemented — user searches city manually.
+-No offline caching yet (can be added with SharedPreferences or SQLite).
+-Error handling covers invalid city names and network issues.
+-UI is simple and can be customized further.
+
+# Dependencies
+provider — State management
+http — API requests
+intl — Date formatting
+
+
+# Github
+git commit -m "weatherapp"
+git remote add origin https://github.com/HridoyDhar1/WeatherApp.git
+git branch -M main
+git push -u origin main
