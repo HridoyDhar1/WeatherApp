@@ -28,25 +28,8 @@ A simple cross-platform Flutter app that shows current weather and a 7-day forec
 ---
 # Project Folder Structure
 My folder structure is:
-lib/
-├── main.dart
-├── core/
-            ----config
-            ----utils
-            ----provider
-            ----services
-      
-│   
-├── feature/
-             ---data/
-                   ---model/
-             ---presentaion
-                  ---- screens/
-                  ----widgets/
+![folder](https://github.com/user-attachments/assets/98461893-925a-4d23-a132-d33ddf026579)
 
-assets/
-pubspec.yaml
-README.md
 lib/
 ├── main.dart
 ├── core/
