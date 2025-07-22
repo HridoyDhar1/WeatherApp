@@ -20,8 +20,9 @@ A simple cross-platform Flutter app that shows current weather and a 7-day forec
 
 ## Screenshots
 
-![weatherapp](https://github.com/user-attachments/assets/90c110cd-8304-457c-9108-e33356389b25)
-![search](https://github.com/user-attachments/assets/b5ebc597-1a9e-47c4-aab3-05badbfb4b3b)
+![weatherapp](https://github.com/user-attachments/assets/2a5b3238-68db-49ad-9114-c86d4ee79cc0)
+
+![search](https://github.com/user-attachments/assets/735a38ab-5093-4033-b64b-7558c9c8e4d1)
 
 
 ---
