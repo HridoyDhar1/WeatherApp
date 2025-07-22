@@ -47,7 +47,22 @@ lib/
 assets/
 pubspec.yaml
 README.md
-
+lib/
+├── main.dart
+├── core/
+│ ├── config/
+│ ├── provider/
+│ ├── services/
+│ └── utils/
+├── feature/
+│ ├── data/
+│ │ └── model/
+│ └── presentation/
+│ ├── screens/
+│ └── widgets/
+assets/
+pubspec.yaml
+README.md
 
 
 ## Android Apk
